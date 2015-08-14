@@ -3,8 +3,9 @@ from porter2 import stem
 import urllib2
 import re
 
-sc = SparkContext("local", "Rye")
+sc = SparkContext()
 
+#text_urls = ['https://www.gutenberg.org/cache/epub/77/pg77.txt', 'http://www.gutenberg.org/cache/epub/2701/pg2701.txt']
 text_urls = ['https://dl.dropboxusercontent.com/u/105876471/tth.txt', 'https://dl.dropboxusercontent.com/u/105876471/coc.txt']
 text1_url = text_urls[0]
 text2_url = text_urls[1]
